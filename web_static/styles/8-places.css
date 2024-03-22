@@ -2,12 +2,17 @@
 .container .places {
   font-size: 30px;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .container .places .article-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-bottom: 50px;
 }
 .container .places article {
@@ -15,13 +20,14 @@
   padding: 20px;
   margin: 20px;
   border: 1px solid #ff5a5f;
-  display: inline-block;
   position: relative;
 
 }
 
-.container .places article h1.title {
+.container .places h1.title {
   font-size: 30px;
+  align-self: flex-start;
+
 }
 
 .container .places article h2 {
